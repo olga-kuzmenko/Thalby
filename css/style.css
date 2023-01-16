@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #000000;
+    box-sizing: border-box;
 }
 
 header {
@@ -53,47 +54,57 @@ header nav ul li a {
 header ul {
     list-style: none;
 }
-ul.social_icons li:nth-child(1){
+
+ul.social_icons li:nth-child(1) {
     position: relative;
     right: 7px;
 }
-ul.social_icons li:nth-child(3){
+
+ul.social_icons li:nth-child(3) {
     position: relative;
     top: -2px;
 }
+
 .main_banner {
     padding-top: 90px;
     padding-bottom: 90px;
     background-color: #F0EFEB;
 }
-.main_banner .container{
+
+.main_banner .container {
     max-width: 1064px;
     margin: auto;
 }
-.main_banner .img_wrapper{
+
+.main_banner .img_wrapper {
     position: relative;
 }
-.main_banner .img_wrapper img{
+
+.main_banner .img_wrapper img {
     position: absolute;
     top: -90px;
     left: 60px;
 }
-.main_banner .text_wrapper{
+
+.main_banner .text_wrapper {
     max-width: 534px;
 }
-.main_banner h1{
+
+.main_banner h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 42px;
 }
-.main_banner p{
+
+.main_banner p {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 26px;
 }
-.main_banner a{
+
+.main_banner a {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -103,18 +114,22 @@ ul.social_icons li:nth-child(3){
     border-radius: 100px;
     text-decoration: none;
 }
+
 .best_sellers_section {
     padding-top: 60px;
     padding-bottom: 248px;
 }
-.best_sellers_section .container{
+
+.best_sellers_section .container {
     max-width: 1064px;
     margin: auto;
 }
-.best_sellers_section .container .text_wrapper{
+
+.best_sellers_section .container .text_wrapper {
     margin-bottom: 88px;
 }
-.best_sellers_section .container h2{
+
+.best_sellers_section .container h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -122,7 +137,8 @@ ul.social_icons li:nth-child(3){
     color: #000000;
     margin-bottom: 27px;
 }
-.best_sellers_section .container p{
+
+.best_sellers_section .container p {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -132,11 +148,13 @@ ul.social_icons li:nth-child(3){
     max-width: 632px;
     margin: auto;
 }
-.best_sellers_section .container span{
+
+.best_sellers_section .container span {
     margin-top: 47px;
     display: inline-block;
 }
-.best_sellers_section .container h3{
+
+.best_sellers_section .container h3 {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -144,40 +162,228 @@ ul.social_icons li:nth-child(3){
     color: #000000;
     margin-bottom: 52px;
 }
-.best_sellers article{
-    flex-direction: column;
-    align-items: center;
-    max-width: 309px;
+
+.best_sellers .owl-stage{
+    display: flex;
+    justify-content: space-between;
 }
-.best_sellers img{
+.best_sellers .owl-nav .owl-prev{
+    position: absolute;
+    left: -50px;
+    top: 100px;
+}
+.best_sellers article {
+    max-width: 309px;
+    text-align: center;
+}
+
+.best_sellers img {
+    width: 100%;
     margin-bottom: 27px;
 }
-.best_sellers a:first-of-type{
-    font-weight: 700;
+
+.best_sellers a, .best_sellers span {
+    display: block;
     font-size: 17px;
     line-height: 20px;
     text-align: center;
     color: #000000;
+    font-weight: 700;
+}
+
+.best_sellers a:first-of-type {
     text-decoration: none;
-    max-width: 156px;
     margin-bottom: 17px;
 }
-.best_sellers span.price{
+
+.best_sellers span.price {
     font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    color: #000000;
     margin: inherit;
     margin-bottom: 10px;
 }
-.best_sellers a:last-of-type{
+
+.people_and_society,
+.power_and_politics {
+    padding-top: 76px;
+    padding-bottom: 51px;
+    background-color: rgba(204, 204, 204, 0.3);;
+}
+
+.people_and_society .container,
+.culture_and_heritage .container,
+.power_and_politics .container {
+    max-width: 1064px;
+    margin: auto;
+    align-items: center;
+}
+
+.people_and_society .container .img_wrapper,
+.power_and_politics .container .img_wrapper {
+    max-width: 385px;
+    margin-right: 50px;
+}
+
+.people_and_society .container h3,
+.culture_and_heritage .container h3,
+.power_and_politics .container h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 31px;
+}
+
+.people_and_society .container p,
+.culture_and_heritage .container p,
+.power_and_politics .container p {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+
+.people_and_society .container a,
+.culture_and_heritage .container a,
+.power_and_politics .container a {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #000000;
 }
 
+.culture_and_heritage {
+    padding-top: 76px;
+    padding-bottom: 51px;
+    background-color: rgba(204, 204, 204, 0.6);
+}
 
+.culture_and_heritage .container .img_wrapper {
+    margin-left: 50px;
+}
+
+.culture_and_heritage .container {
+    text-align: right;
+}
+
+.keep_in_touch {
+    padding-top: 79px;
+    padding-bottom: 88px;
+}
+
+.keep_in_touch .container {
+    max-width: 1064px;
+    margin: auto;
+    text-align: center;
+}
+
+.keep_in_touch .container h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding-bottom: 9px;
+}
+
+.keep_in_touch .container p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    padding-bottom: 26px;
+}
+
+.keep_in_touch .container form {
+    max-width: 366px;
+    margin: auto;
+}
+
+.keep_in_touch .container form label {
+    display: none;
+}
+
+.keep_in_touch .container form input {
+    padding: 12px 8px 11px 8px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+}
+
+.keep_in_touch .container form .d_flex {
+    margin-bottom: 18px;
+    justify-content: space-between;
+}
+
+.keep_in_touch .container form #first_name,
+.keep_in_touch .container form #last_name {
+    max-width: 153px;
+}
+
+.keep_in_touch .container form .email {
+    margin-bottom: 16px;
+}
+
+.keep_in_touch .container form button {
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 8px 23px;
+}
+
+footer {
+    background-color: #020202;
+    padding-top: 51px;
+    padding-bottom: 16px;
+}
+
+footer .container {
+    max-width: 1064px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+footer .container a img {
+    margin-bottom: 37px;
+}
+
+footer .container ul {
+    list-style: none;
+}
+
+footer .container ul.social_icons li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer li,
+footer li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+footer .links {
+    margin-bottom: 20px;
+}
+
+footer .links ul:last-of-type {
+    margin-left: 72px;
+}
+
+footer .links ul li:first-of-type {
+    margin-bottom: 36px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: center;
+}
