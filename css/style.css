@@ -162,10 +162,12 @@ ul.social_icons li:nth-child(3) {
     color: #000000;
     margin-bottom: 52px;
 }
+.best_sellers{
+    justify-content: space-around;
+}
 
-.best_sellers .owl-stage{
-    display: flex;
-    justify-content: space-between;
+.best_sellers .owl-item{
+    text-align: center;
 }
 .best_sellers .owl-nav .owl-prev{
     position: absolute;
@@ -175,6 +177,7 @@ ul.social_icons li:nth-child(3) {
 .best_sellers article {
     max-width: 309px;
     text-align: center;
+    display: inline-block;
 }
 
 .best_sellers img {
