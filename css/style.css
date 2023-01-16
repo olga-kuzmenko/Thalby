@@ -7,14 +7,14 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1064px;
+    margin: auto;
+}
+
 header {
     padding: 16px 0 15px;
     position: relative;
-}
-
-header .container {
-    max-width: 1064px;
-    margin: auto;
 }
 
 header .logo {
@@ -71,11 +71,6 @@ ul.social_icons li:nth-child(3) {
     background-color: #F0EFEB;
 }
 
-.main_banner .container {
-    max-width: 1064px;
-    margin: auto;
-}
-
 .main_banner .img_wrapper {
     position: relative;
 }
@@ -120,11 +115,6 @@ ul.social_icons li:nth-child(3) {
     padding-bottom: 248px;
 }
 
-.best_sellers_section .container {
-    max-width: 1064px;
-    margin: auto;
-}
-
 .best_sellers_section .container .text_wrapper {
     margin-bottom: 88px;
 }
@@ -162,18 +152,37 @@ ul.social_icons li:nth-child(3) {
     color: #000000;
     margin-bottom: 52px;
 }
-.best_sellers{
+
+.best_sellers {
     justify-content: space-around;
 }
 
-.best_sellers .owl-item{
+.best_sellers .owl-item {
     text-align: center;
 }
-.best_sellers .owl-nav .owl-prev{
-    position: absolute;
-    left: -50px;
-    top: 100px;
+
+.best_sellers .owl-dots {
+    text-align: center;
 }
+
+.best_sellers .owl-dot span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #A0A0A0;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.best_sellers .owl-dot.active span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    border: 1px solid #A0A0A0;
+}
+
 .best_sellers article {
     max-width: 309px;
     text-align: center;
@@ -215,8 +224,6 @@ ul.social_icons li:nth-child(3) {
 .people_and_society .container,
 .culture_and_heritage .container,
 .power_and_politics .container {
-    max-width: 1064px;
-    margin: auto;
     align-items: center;
 }
 
@@ -272,8 +279,6 @@ ul.social_icons li:nth-child(3) {
 }
 
 .keep_in_touch .container {
-    max-width: 1064px;
-    margin: auto;
     text-align: center;
 }
 
@@ -304,7 +309,6 @@ ul.social_icons li:nth-child(3) {
     padding: 12px 8px 11px 8px;
     width: 100%;
     border: 1px solid #000000;
-    border-radius: 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -343,8 +347,6 @@ footer {
 }
 
 footer .container {
-    max-width: 1064px;
-    margin: auto;
     justify-content: space-between;
 }
 
